@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF05894D-8F2D-4984-9A7A-4B1E70922646}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyCGV</RootNamespace>
+    <AssemblyName>MyCGV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CGV - Đăng nhập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Đăng nhập.Designer.cs">
+      <DependentUpon>CGV - Đăng nhập.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Màn hình chính.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Màn hình chính.Designer.cs">
+      <DependentUpon>CGV - Ad - Màn hình chính.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Setting Cụm rạp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Setting Cụm rạp.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Setting Cụm rạp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 1.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Quận 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 2.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Quận 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Q3 - Màn hình chính.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Q3 - Màn hình chính.designer.cs">
+      <DependentUpon>CGV - Q3 - Màn hình chính.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Đổi mật khẩu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Đổi mật khẩu.designer.cs">
+      <DependentUpon>CGV - Đổi mật khẩu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Q3 - Phim Rạp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Q3 - Phim Rạp.designer.cs">
+      <DependentUpon>CGV - Q3 - Phim Rạp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLKH.designer.cs">
+      <DependentUpon>CGV - Q3 - QLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLKH - Đăng ký phim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLKH - Đăng ký phim.designer.cs">
+      <DependentUpon>CGV - Q3 - QLKH - Đăng ký phim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLLC.designer.cs">
+      <DependentUpon>CGV - Q3 - QLLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLLC - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLLC - Thêm.designer.cs">
+      <DependentUpon>CGV - Q3 - QLLC - Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLLC - Xóa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Q3 - QLLC - Xóa.designer.cs">
+      <DependentUpon>CGV - Q3 - QLLC - Xóa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLLC.designer.cs">
+      <DependentUpon>CGV - Ad - QLLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLLC - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLLC - Thêm.designer.cs">
+      <DependentUpon>CGV - Ad - QLLC - Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Suât chiếu - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Suât chiếu - Thêm.designer.cs">
+      <DependentUpon>CGV - Ad - Suât chiếu - Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLTK - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>CGV - Ad - QLTK - Thêm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLKH -Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLKH -Thêm.Designer.cs">
+      <DependentUpon>CGV - Ad - QLKH -Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Thể loại - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Thể loại - Thêm.Designer.cs">
+      <DependentUpon>CGV - Ad - Thể loại - Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Thể loại - Sửa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Thể loại - Sửa.Designer.cs">
+      <DependentUpon>CGV - Ad - Thể loại - Sửa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Phim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Phim.Designer.cs">
+      <DependentUpon>CGV - Ad - Phim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 3.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Quận 3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLKH.Designer.cs">
+      <DependentUpon>CGV - Ad - QLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLTK.Designer.cs">
+      <DependentUpon>CGV - Ad - QLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Suất chiếu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Suất chiếu.Designer.cs">
+      <DependentUpon>CGV - Ad - Suất chiếu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Sửa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Sửa.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Sửa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Phim - Sửa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Phim - Sửa.Designer.cs">
+      <DependentUpon>CGV - Ad - Phim - Sửa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Thêm.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Phim - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Phim - Thêm.Designer.cs">
+      <DependentUpon>CGV - Ad - Phim - Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 1 - Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 1 - Thêm.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Quận 1 - Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CGV - Ad - QLCR - Quận 1 - Sửa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLCR - Quận 1 - Sửa.Designer.cs">
+      <DependentUpon>CGV - Ad - QLCR - Quận 1 - Sửa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - Thể loại.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - Thể loại.Designer.cs">
+      <DependentUpon>CGV - Ad - Thể loại.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGV - Ad - QLLC - Xóa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGV - Ad - QLLC - Xóa.designer.cs">
+      <DependentUpon>CGV - Ad - QLLC - Xóa.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CGV - Đăng nhập.resx">
+      <DependentUpon>CGV - Đăng nhập.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Màn hình chính.resx">
+      <DependentUpon>CGV - Ad - Màn hình chính.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Quận 1.resx">
+      <DependentUpon>CGV - Ad - QLCR - Quận 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Setting Cụm rạp.resx">
+      <DependentUpon>CGV - Ad - QLCR - Setting Cụm rạp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Quận 2.resx">
+      <DependentUpon>CGV - Ad - QLCR - Quận 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Q3 - Màn hình chính.resx">
+      <DependentUpon>CGV - Q3 - Màn hình chính.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Đổi mật khẩu.resx">
+      <DependentUpon>CGV - Đổi mật khẩu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Q3 - Phim Rạp.resx">
+      <DependentUpon>CGV - Q3 - Phim Rạp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Q3 - QLKH.resx">
+      <DependentUpon>CGV - Q3 - QLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Q3 - QLKH - Đăng ký phim.resx">
+      <DependentUpon>CGV - Q3 - QLKH - Đăng ký phim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Q3 - QLLC.resx">
+      <DependentUpon>CGV - Q3 - QLLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Q3 - QLLC - Thêm.resx">
+      <DependentUpon>CGV - Q3 - QLLC - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Q3 - QLLC - Xóa.resx">
+      <DependentUpon>CGV - Q3 - QLLC - Xóa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLLC.resx">
+      <DependentUpon>CGV - Ad - QLLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLLC - Thêm.resx">
+      <DependentUpon>CGV - Ad - QLLC - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Suât chiếu - Thêm.resx">
+      <DependentUpon>CGV - Ad - Suât chiếu - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLTK - Thêm.resx">
+      <DependentUpon>CGV - Ad - QLTK - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLKH -Thêm.resx">
+      <DependentUpon>CGV - Ad - QLKH -Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Thể loại - Thêm.resx">
+      <DependentUpon>CGV - Ad - Thể loại - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Thể loại - Sửa.resx">
+      <DependentUpon>CGV - Ad - Thể loại - Sửa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Phim.resx">
+      <DependentUpon>CGV - Ad - Phim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Quận 3.resx">
+      <DependentUpon>CGV - Ad - QLCR - Quận 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLKH.resx">
+      <DependentUpon>CGV - Ad - QLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLTK.resx">
+      <DependentUpon>CGV - Ad - QLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Suất chiếu.resx">
+      <DependentUpon>CGV - Ad - Suất chiếu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Sửa.resx">
+      <DependentUpon>CGV - Ad - QLCR - Sửa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Phim - Sửa.resx">
+      <DependentUpon>CGV - Ad - Phim - Sửa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Quận 1 - Sửa.resx">
+      <DependentUpon>CGV - Ad - QLCR - Quận 1 - Sửa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Thêm.resx">
+      <DependentUpon>CGV - Ad - QLCR - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Phim - Thêm.resx">
+      <DependentUpon>CGV - Ad - Phim - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLCR - Quận 1 - Thêm.resx">
+      <DependentUpon>CGV - Ad - QLCR - Quận 1 - Thêm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - Thể loại.resx">
+      <DependentUpon>CGV - Ad - Thể loại.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGV - Ad - QLLC - Xóa.resx">
+      <DependentUpon>CGV - Ad - QLLC - Xóa.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foody-upload-api-foody-mobile-cgv-nha-trang-1-200204145233.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\709579.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
